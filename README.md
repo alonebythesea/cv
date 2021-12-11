@@ -1,2 +1,6 @@
-# cv
-My cv tex code
+## Requirements
+
+* Roboto font
+* Inconsolata
+* Font Awesome font
+* XeLaTeX

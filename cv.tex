@@ -1,0 +1,160 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt]{letter}
+\usepackage[lmargin=0.9cm, vmargin=2cm, rmargin=0.9cm]{geometry} % Document margins
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{roboto}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage[utf8]{inputenc}
+\usepackage[document]{ragged2e}
+\pagestyle{fancy}
+
+\titleformat{\section}{\huge\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+\newcommand{\forceindent}{\leavevmode{\parindent=1em\indent} % Indent command
+}
+\pagenumbering{roman} % Roman page numbers
+\fancypagestyle{plain}{}
+\renewcommand\headrulewidth{0pt}
+
+
+% Fonts
+\setmonofont{Inconsolata}
+\setmainfont{Roboto}
+\newfontfamily{\rmspacedfamily}[LetterSpace=4]{Roboto}
+
+% PDF setup
+\usepackage{hyperref}
+\hypersetup {
+  colorlinks,
+  urlcolor   = [RGB]{0,0,208},
+  linkcolor  = [RGB]{0,0,208},
+  citecolor  = [RGB]{0,0,208},
+}
+
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	HEAD SECTION
+%----------------------------------------------------------------------------------------
+\begin{spacing}{2}
+    {\centerline{{\huge \vphantom{Name}ALEKSANDR MUKHITDINOV}}}
+    {\centerline{\large \vphantom{Position}DevOps Engineer, SRE (Middle)}}
+    {\centerline{\textit{Updated: 07/12/2021}}}
+\end{spacing}
+
+{\setlength{\columnsep}{-0.9cm}\begin{multicols}{4}
+    \begin{spacing}{2}\rmfamily
+    \large{
+        \vphantom{contacts}
+        \faLinkedin \href{https://www.linkedin.com/in/alonebythesea}{\vphantom{LinkedIn} alonebythesea} \\
+        \columnbreak
+        \faGithubAlt \href{https://github.com/alonebythesea}{\vphantom{GitHub} alonebythesea} \\
+        \columnbreak
+        \faLink \href{https://crysh.cc}{\vphantom{Website} crysh.cc} \\
+        \columnbreak
+        \faEnvelope \href{mailto:alonebythesea@gmail.com}{\vphantom{Email} alonebythesea@gmail.com} \\
+        \columnbreak
+    }
+  \end{spacing}\end{multicols}}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT SECTION
+%----------------------------------------------------------------------------------------
+\section*{About\vphantom{about}}
+
+
+\forceindent Systems/DevOps Engineer with hands-on experience in automation, configuration management, deployments optimization, microservices, monitoring tools. Familiar with AWS,GCP and Azure, implementing CI/CD, and DevOps methodology. Follower of KISS principles and Unix philosophy lover. \\
+
+
+\forceindent Speaking English (B1+/B1+) and Russian (native).
+
+%----------------------------------------------------------------------------------------
+%	GITHUB SECTION
+%----------------------------------------------------------------------------------------
+\section*{Github\vphantom{git}}
+
+
+\forceindent Some of the projects that left after my education in EPAM Lab\vspace{0.2em}\\
+\href{https://github.com/alonebythesea/zabbix-server-deploy}{github.com/alonebythesea/zabbix-server-deploy} \\
+\href{https://github.com/alonebythesea/elk-stack-deploy}{github.com/alonebythesea/elk-stack-deploy} \\
+\href{https://github.com/alonebythesea/prometheus-stack-deploy}{github.com/alonebythesea/prometheus-stack-deploy} \\
+\forceindent Also here is my Ansible learning homeworks, I did a custom module for Ansible: \\
+\href{https://github.com/alonebythesea/ansible_homeworks}{github.com/alonebythesea/ansible\_homeworks} \\
+\forceindent Things I did when I was studying programming: \\
+\href{https://github.com/alonebythesea/hackerrank}{github.com/alonebythesea/hackerrank} - Some kind of LeetCode clone but better in my opinion.\\
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section*{Experience\vphantom{exp}}
+
+\begin{etaremune}[
+  topsep=1ex,itemsep=1.5ex,partopsep=0ex,
+  parsep=0ex,rightmargin=1em,leftmargin=2em
+]
+  \item
+    \emph{Systems/DevOps Engineer}\hfill
+    at EPAM\hspace{14em}
+    \textit{03/21\,—\,present}\vspace{-1.5ex}\newline
+
+  \item
+    \emph{Trainee Systems/DevOps Engineer}\hfill
+    at EPAM\hspace{6.3em}
+    \textit{6 mos.}\hspace{5em}
+    \textit{09/20\,—\,03/21}\vspace{1em}\newline
+    \forceindent I have successfully completed the educational program at the DevOps EPAM Laboratory. I was enrolled in the DevOps Lab after successfully completed the 128-hours in the EPAM Cloud \& DevOps online training. At the online traning I studied: 
+	Networks Fundamentals, Microsoft PowerShell, Windows Server AD, IIS, Microsoft SQL Database; \\
+
+	\forceindent In the lab, I studied: Linux Management and Configuration, Scripting (Bash, Python, Groovy),Virtualization and Containerization (Vagrant, Docker, Kubernetes), Configuration Management (Ansible),CI/CD (Jenkins, SonarQube, Nexus),Infrastructure Monitoring (Zabbix, Prometheus, Kibana ElasticSearch), Cloud Management (AWS, GCP, Terraform), etc.; \\
+	
+	\forceindent I successfully completed practical tasks in the learning process and took part in the team and personally in the presentation of the completed project.\\
+\end{etaremune}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	TECHNOLOGIES SECTION
+%----------------------------------------------------------------------------------------
+\section*{Technologies\vphantom{tech}}
+
+\begin{itemize}
+  \item Cloud Platforms: Amazon Web Services, Google Cloud Platform
+  \item Cloud Automation: Terraform, AWS CDK, Cloudformation, Pulumi
+  \item Container Orchestration: Kubernetes
+  \item CI/CD: Jenkins, Gitlab CD, argoCD
+  \item CMS: Ansible
+  \item Monitoring: Prometheus, Grafana, Zabbix, many SaaS tools(Datadog, AppDynamics, NewRelic)
+  \item Logs: ELK/EFK, Loki
+  \item Languages: mostly Bash and Python, but I worked some with a dozen different languages over time
+  \item Few more keywords: Linux, Docker, Git, GKE, KVM, Go
+\end{itemize}
+
+\forceindent Many things I didn't mention (e.g. web servers, load balancers) since it would be too much and is not really important.
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\section*{Certifications\vphantom{certs}}
+
+\begin{itemize}
+    \item AWS Certified Solutions Architect – Associate \\
+    \href{https://credly.com/earner/earned/badge/5c45bd5f-11f6-4f70-b92d-d8481dd93b5c}{credly.com/earner/earned/badge/5c45bd5f-11f6-4f70-b92d-d8481dd93b5c}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section*{Education\vphantom{edu}}
+
+\textbf{Name of the Education Establishment:} BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS \\
+\textbf{Faculty/College:} telecommunications faculty \\
+\textbf{Degree (diploma):} Bachelor \\
+\textbf{Specialty:} Infocommunication Technologies and Telecommunications Networks \\
+
+\end{document}~
